@@ -1,0 +1,6 @@
+Megan 2048
+Laney 1024
+Elon 512
+Qu 256
+Draper 128
+-1

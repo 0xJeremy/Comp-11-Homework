@@ -1,0 +1,51 @@
+/*
+* COMP11
+* Homework 3
+* Problem 1
+* Jeremy Kanovsky
+*/
+
+1. ping homework.cs.tufts.edu
+
+2. 0 20 40 60 80
+
+3. A - foo(1, 2);
+   B - string x = bar();
+
+4. pow, two inputs (either integers or doubles) and returns a double
+   Format is pow(base, exponent)
+   #include<math.h>
+   double x = pow(13, 2);
+
+5. - Define int roll
+   - Write a while loop that runs when !round_over
+	- Print who's turn it is
+	- Ask for 0 or 1
+	- Define char choice
+	- Ask for input for choice
+	- If choice = 1
+		- End round and print the points from that player for the round
+	- Else
+		- Roll a random number between 1 and 6 (rand() % 6 + 1)
+		- Print the roll for the player
+		- If roll = 1
+			- End round
+			- Reset round points to 0
+		- Else
+			- Add the roll points to round points
+   - If turn = 1
+	- Add round points to player one points
+   - Else
+	- Add round points to player two points
+   - Print player 1 and player 2 points
+   - Switch player turn (by calling switch_turn() function)
+   - Check for win (by calling the check_for_win function)
+   - If win = 1 or 2
+	- Game over = true
+   - Print out who won using if/else statement
+	- If player 1 points > threshold (20)
+		- Print player 1 wins
+	- Else
+		- Print player 2 wins
+   - Thank user for playing
+   - return 0

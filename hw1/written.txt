@@ -1,0 +1,52 @@
+/*
+* COMP11
+* Homework 1
+* Problem 1
+* Jeremy Kanovsky
+*/
+
+1. A - int
+   B - double
+   C - string
+
+2. A - int current_inning;
+   B - current_inning = 6;
+   C - const double EARNED_RUN = 2.38;
+
+3. - Get Peanut Butter, and open lid
+   - Get Jelly, and open lid
+   - Get Bread, and open bag
+   - Get knife, and hold by the handle
+   - Lay two pieces of bread flat on the table
+   - Using knife, dip into Jelly and spread roughly a tablespoon on one piece of bread
+   - Using knife, dip into Peanut Butter and spread roughly a tablespoon on the other piece of bread
+   - Put down knife
+   - Put 'jelly' bread on 'peanut butter bread' face down, so the two sides containing peanut butter and jelly touch
+   - Close Jelly. Close bread. Close Peanut Butter.
+   - Put knife in sink
+   - Eat sandwitch, one bite at a time
+
+4. Use the variables choice_one, choice_two, etc. Have the user input these as strings or ints (depending on extra credit), and then confirm inputs are correct.
+   Have a variable "points" be an integer keeping the players score.
+   - cout "greeting"
+   - cout "enter name"
+   - cin "name"
+   - cout "offer choices Yes/No"
+   - cin choice_one
+   - if(yes)
+	- cout offer new choices, use player name
+	- cin choice_two
+	- add points from previous answer
+	- if(yes)
+		- cout "[player name] wins!"
+		- add points to previous value
+	- if(no)
+		- cout "[player name] loses"
+   - if(no)
+	- cout "[player name] loses"
+
+5. In my labyrinth code I accidently included semicolins after the #include statements.
+   These did not throw an error, just a warning, and so I was able to easily correct
+   my code. I got errors when I forgot '<<' between a text statement and a variable
+   when using cout. These were also easily corrected before the code ran. Other
+   than these there were no seriously warnings or errors.

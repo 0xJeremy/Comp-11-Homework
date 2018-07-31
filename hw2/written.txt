@@ -1,0 +1,62 @@
+/*
+* COMP11
+* Homework 2
+* Problem 1
+* Jeremy Kanovsky
+*/
+
+1. ls -l -tr
+
+2. C
+
+3. 28. 10
+       7
+       4
+       1
+   29. [Nothing would output]
+   30. 7
+       4
+       1
+   31. -42
+
+**4. A - 2
+    * B - int y = 3, x = 3;
+	switch (x + 3)
+	{
+		case 6: 
+		y = 0;
+		default: 
+		y += 1;
+	}
+   C - int y = 3, x = 3;
+       if((x+3)==6)
+	{
+	 y = 1;
+	}
+	else
+	{
+	 y = 1;
+	}
+
+5. A - 1 0
+   B - 0 1 2 3
+   C - (Infinite Loop)
+   D - 5
+   E - 5
+
+6. - Set the four master pegs to be constant chars (const char MASTER_PEG_0, MASTER_PEG_1, etc)
+   - Welcome the user
+   - Tell the user which pegs colors they can enter
+   - Prompt the user to enter four pegs
+   - Use a while loop to repeat the following:
+	   - Store user peg colors as chars (peg0, peg1, etc)
+	   - Using while loops, identify if any of the pegs are not the correct colors
+	   - List white pegs and black pegs using if statements to determine user input
+		- Use conditionals to test peg entries to master key for black pegs
+		- Use conditions with or statements to other master key for white pegs
+		- For white pegs: also test against other peg entries to avoid double counting
+	   - Print out white and black pegs
+	   - Ask if the user wishes to continue
+	   - Repeat loop if(yes)
+	   - Break loop if(no)
+   - Congratulate user when they get the correct colors

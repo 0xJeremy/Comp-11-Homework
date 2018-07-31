@@ -1,0 +1,45 @@
+/*
+* COMP11
+* Homework 4
+* Problem 1
+* Jeremy Kanovsky
+/*
+
+1. 	chmod a-rw awesome.cpp
+	chmod u+rw awesome.cpp
+
+2.	A - void foo(int &, int);
+		B - string bar();
+		C - int x = 5;
+			int y = 10;
+			foo(x, y);
+		D - string x = bar();
+
+3. 	A - 5 6
+        6 6
+        6 7
+    B - 5 6
+        8 5
+        7 10
+
+4. 	void user_turn(int &num_vampires, int &num_stakes, bool &buffy_dead)
+	void stake_attack(int &num_vampires, int &num_stakes, bool &buffy_dead)
+	bool stake_check(int num_stakes, int stakes_needed)
+	void spell_attack(int &num_vampires, int &num_stakes, bool &buffy_dead)
+	void run_away(int &num_stakes, bool &buffy_dead)
+	void buffy_died(bool &buffy_dead)
+	void status_print(int num_vampires, int num_stakes, bool buffy_dead)
+
+	user_turn will be called multiple times and each time 
+		will allow the user to make a move.
+	stake_attack will be called from user_turn and will be
+		for when the user decides to use a stake to attack the vampires.
+	spell_attack will be called from user_turn and will be
+		for when the user decides to use a spell to attack the vampires.
+	run_away will be called from user_turn and will cause 
+		the user to run away from the attack.
+	buffy_died will modify the boolean value of if Buffy is
+		alive or dead.
+	status_print will be called after user_turn from the main
+		 function and will print out the number of vampires, the
+		 number of stakes left, and if buffy is alive of dead.
